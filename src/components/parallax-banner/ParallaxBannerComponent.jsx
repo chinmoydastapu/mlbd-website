@@ -10,7 +10,7 @@ const ParallaxBannerComponent = ({ backgroundImage, title, description }) => {
           speed: -30,
         },
       ]}
-      className="relative h-screen lg:h-[80vh] overflow-hidden"
+      className="relative h-screen lg:h-[90vh] overflow-hidden"
     >
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -23,7 +23,7 @@ const ParallaxBannerComponent = ({ backgroundImage, title, description }) => {
           >
             {/* Title Animation */}
             <motion.h1
-              className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight tracking-wide uppercase bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
+              className="text-3xl lg:text-5xl font-extrabold mb-6 leading-tight tracking-wide uppercase bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -43,7 +43,7 @@ const ParallaxBannerComponent = ({ backgroundImage, title, description }) => {
 
             {/* Decorative Line */}
             <motion.div
-              className="mt-8 w-24 h-1 mx-auto bg-gradient-to-r from-pink-500 to-purple-400 rounded-full"
+              className="mt-8 w-48 h-1 mx-auto bg-gradient-to-r from-pink-500 to-purple-400 rounded-full"
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
               transition={{ duration: 0.5, delay: 1.5 }}

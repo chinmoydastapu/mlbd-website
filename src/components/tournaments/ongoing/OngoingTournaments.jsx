@@ -1,4 +1,6 @@
+import { ParallaxProvider } from "react-scroll-parallax";
 import OngoingTournamentCard from "./OngoingTournamentCard";
+import ParallaxBannerComponent from "../../parallax-banner/ParallaxBannerComponent";
 
 const OngoingTournaments = ({ tournaments }) => {
   const currentTournaments = tournaments.filter(
@@ -6,17 +8,19 @@ const OngoingTournaments = ({ tournaments }) => {
   );
 
   return (
-    <div className="bg-gray-100 py-10 px-4">
-      <h1 className="text-4xl font-bold text-center text-indigo-700 mb-8">
-        Ongoing Tournaments
-      </h1>
+    <ParallaxProvider>
+      <ParallaxBannerComponent
+        backgroundImage="https://images5.alphacoders.com/127/1271344.jpg"
+        title="Ongoing Tournaments"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo necessitatibus ducimus dolores facere adipisci quos pariatur perferendis omnis fuga quis, unde vero. At aliquam repudiandae quaerat, quisquam quia animi! dolores facere adipisci quos pariatur perferendis omnis fuga quis, unde vero. At aliquam repudiandae quaerat, quisquam quia animi!"
+      />
 
-      <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1 mx-4 mt-10">
         {currentTournaments.map((tournament) => (
           <OngoingTournamentCard key={tournament._id} tournament={tournament} />
         ))}
       </div>
-    </div>
+    </ParallaxProvider>
   );
 };
 

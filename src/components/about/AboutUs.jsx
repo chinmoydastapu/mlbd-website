@@ -6,7 +6,7 @@ const AboutUs = () => {
         <ParallaxProvider>
             <ParallaxBannerComponent
                 backgroundImage="https://images7.alphacoders.com/116/1167752.jpg"
-                title="About"
+                title="About Us"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo necessitatibus ducimus dolores facere adipisci quos pariatur perferendis omnis fuga quis, unde vero. At aliquam repudiandae quaerat, quisquam quia animi!"
             />
 

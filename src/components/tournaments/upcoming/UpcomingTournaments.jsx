@@ -1,4 +1,6 @@
+import { ParallaxProvider } from "react-scroll-parallax";
 import UpcomingTournamentCard from "./UpcomingTournamentCard";
+import ParallaxBannerComponent from "../../parallax-banner/ParallaxBannerComponent";
 
 const UpcomingTournaments = ({ tournaments }) => {
     const upcomingTournaments = tournaments.filter(
@@ -6,16 +8,18 @@ const UpcomingTournaments = ({ tournaments }) => {
     );
 
     return (
-        <div className="bg-gray-100 py-10 px-4">
-            <h1 className="text-4xl font-bold text-center text-indigo-700 mb-8">
-                Upcoming Tournaments
-            </h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-4">
+        <ParallaxProvider>
+            <ParallaxBannerComponent
+                backgroundImage="https://images7.alphacoders.com/118/thumb-1920-1186314.jpg"
+                title="Upcoming Tournaments"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo necessitatibus ducimus dolores facere adipisci quos pariatur perferendis omnis fuga quis, unde vero. At aliquam repudiandae quaerat, quisquam quia animi! dolores facere adipisci quos pariatur perferendis omnis fuga quis, unde vero. At aliquam repudiandae quaerat, quisquam quia animi!"
+            />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-4 mt-10">
                 {upcomingTournaments.map((tournament) => (
                     <UpcomingTournamentCard key={tournament._id} tournament={tournament} />
                 ))}
             </div>
-        </div>
+        </ParallaxProvider>
     );
 };
 
