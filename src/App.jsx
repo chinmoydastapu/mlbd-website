@@ -1,7 +1,8 @@
 import AboutUs from "./components/about/AboutUs";
+import Registration from "./components/registration/Registration";
 import OngoingTournaments from "./components/tournaments/ongoing/OngoingTournaments";
 import PreviousTournaments from "./components/tournaments/previous/PreviousTournaments";
-import UpcomingTournaments from "./components/tournaments/upcoming/UpcomingTournaments"
+import UpcomingTournaments from "./components/tournaments/upcoming/UpcomingTournaments";
 
 function App() {
   const tournaments = [
@@ -120,6 +121,7 @@ function App() {
       {/* <PreviousTournaments tournaments={tournaments} /> */}
       {/* <OngoingTournaments tournaments={tournaments} /> */}
       <AboutUs />
+      {/* <Registration /> */}
     </div>
   )
 }
