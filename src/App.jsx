@@ -120,7 +120,7 @@ function App() {
       {/* <UpcomingTournaments tournaments={tournaments} /> */}
       {/* <PreviousTournaments tournaments={tournaments} /> */}
       {/* <OngoingTournaments tournaments={tournaments} /> */}
-      {/* <AboutUs /> */}
+      <AboutUs />
       {/* <Registration /> */}
     </div>
   )
