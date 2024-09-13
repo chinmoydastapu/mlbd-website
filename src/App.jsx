@@ -1,4 +1,5 @@
 import AboutUs from "./components/about/AboutUs";
+import Partners from "./components/partners/Partners";
 import Registration from "./components/registration/Registration";
 import OngoingTournaments from "./components/tournaments/ongoing/OngoingTournaments";
 import PreviousTournaments from "./components/tournaments/previous/PreviousTournaments";
@@ -120,8 +121,9 @@ function App() {
       {/* <UpcomingTournaments tournaments={tournaments} /> */}
       {/* <PreviousTournaments tournaments={tournaments} /> */}
       {/* <OngoingTournaments tournaments={tournaments} /> */}
-      <AboutUs />
+      {/* <AboutUs /> */}
       {/* <Registration /> */}
+      <Partners />
     </div>
   )
 }
